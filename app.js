@@ -98,7 +98,7 @@ function downloadDiagram() {
     var imgData = myDiagram.makeImage({
         scale: 1,
         background: "white",
-        maxSize: new go.Size(imgWidth, imgHeight) // Set the size of the image
+        maxSize: new go.Size(imgWidth + 5, imgHeight + 5) // Set the size of the image
     }).src;
 
     // Create a temporary link element
