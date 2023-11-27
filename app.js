@@ -1,5 +1,5 @@
 var $ = go.GraphObject.make;
-const DEBUG = true;
+const DEBUG = false;
 
 
 var myDiagram = $(go.Diagram, "flowChartOutput", // the ID of the DIV HTML element
