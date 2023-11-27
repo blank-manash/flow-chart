@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Chart Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Flow Chart Generator</h1>
+        </header>
+        <main class="main-content">
+            <section class="input-section">
+                <textarea id="textInput" class="text-input"
+                    placeholder="Enter your essay or paragraph here..."></textarea>
+                <button id="generateButton" class="generate-btn" onclick="generateFlowChart()">Generate</button>
+                <!-- Text-based Progress Indicator -->
+                <div id="progressIndicator" class="progress-indicator" style="display:none;">
+                    Loading...
+                </div>
+            </section>
+            <section class="output-section">
+                <div id="flowChartOutput" class="chart-output"></div>
+                <div id="downloadButton" class="download-container" style="display:none;">
+                    <button class="download-btn" onclick="downloadDiagram()">Download as
+                        Image</button>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.1.52/go.js"></script>
+    <!-- Simulated API Call; replace with actual API logic -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
