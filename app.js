@@ -55,8 +55,12 @@ function stopProgress() {
 
 
 function generateFlowChart() {
-    startProgress();
     var text = document.getElementById('textInput').value;
+    if (!text) {
+        alert('Please enter some text');
+        return;
+    }
+    startProgress();
     getAPIResponse(text).then(apiResponse => {
         if (apiResponse && apiResponse.success) {
             const flowChartData = apiResponse.data;
