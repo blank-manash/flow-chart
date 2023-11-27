@@ -1,6 +1,5 @@
 var $ = go.GraphObject.make;
 const DEBUG = true;
-const OPEN_API_KEY = "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";
 
 
 var myDiagram = $(go.Diagram, "flowChartOutput", // the ID of the DIV HTML element
